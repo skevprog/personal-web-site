@@ -17,5 +17,8 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
+  "rules": {
+    "jsx-quotes": ["error", "prefer-double"]
+  },
   "plugins": ["@typescript-eslint"]
 }
