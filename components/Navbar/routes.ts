@@ -15,17 +15,12 @@ export const routeNames: Route[] = [
    },
    {
       id: 'about',
-      href: '/about',
+      href: '#about',
       label: 'About',
    },
    {
-      id: 'skills',
-      href: '/skills',
-      label: 'Skills',
-   },
-   {
       id: 'contact',
-      href: '/contact',
+      href: '#contact',
       label: 'Contact',
    },
 ]
