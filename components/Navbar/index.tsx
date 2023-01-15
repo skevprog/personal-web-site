@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
 
 import { routeNames, socialIconLinks } from './routes';
@@ -6,11 +6,21 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
 function Navbar() {
    const [nav, setNav] = useState(false);
+   const [shadow, setShadow] = useState(false);
+
+   const handleScroll = () => setShadow(window.scrollY >= 90);
+
+   useEffect(() => {
+      window.addEventListener('scroll', handleScroll)
+      return () => {
+         window.removeEventListener('scroll', handleScroll)
+      }
+   }, [])
 
    const handleNav = () => setNav(!nav);
 
    return (
-      <div className="fixed w-full h-20 shadow-xl z-[100]">
+      <div className={`fixed w-full h-20 ${shadow ? 'shadow-xl' : ''} z-[100]`}>
          <div className="flex justify-between items-center w-full h-full ">
             <div>
                <ul className="hidden md:flex">
