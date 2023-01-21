@@ -5,10 +5,11 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 import GetInTouchImage from '../../public/assets/get-in-touch.jpg';
+import { PERSONAL_LINKS } from '../../constants/routes';
 
 function Contact() {
    return (
-      <div id="contact" className="w-full md:h-screen py-24">
+      <div id="contact" className="w-full md:h-screen p-10 py-24">
          <div className="max-w-[1240px] m-auto px-2 py-22 w-full ">
             <p className="text-xl tracking-widest uppercase text-[#5651e5]">
                Contact
@@ -17,7 +18,7 @@ function Contact() {
             <div className="grid lg:grid-cols-5 gap-8">
                {/* left */}
                <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
-                  <div className="lg:p-4 h-full ">
+                  <div className="lg:p-4 h-full flex flex-col justify-between">
                      <div>
                         <Image
                            className="rounded-xl duration-300"
@@ -33,7 +34,7 @@ function Contact() {
                         <p className="uppercase pt-8">Connect With Me</p>
                         <div className="flex items-center justify-between py-4">
                            <a
-                              href="https://www.linkedin.com/in/clint-briley-50056920a/"
+                              href={PERSONAL_LINKS.linkedIn}
                               target="_blank"
                               rel="noreferrer"
                            >
@@ -42,7 +43,7 @@ function Contact() {
                               </div>
                            </a>
                            <a
-                              href="https://github.com/fireclint"
+                              href={PERSONAL_LINKS.github}
                               target="_blank"
                               rel="noreferrer"
                            >
@@ -66,9 +67,9 @@ function Contact() {
                         method="POST"
                         encType="multipart/form-data"
                      >
-                        <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                        <div className="grid md:grid-cols-2 gap-4 w-full pb-2">
                            <div className="flex flex-col">
-                              <label className="uppercase text-sm py-2">Name</label>
+                              <label className="uppercase text-sm pb-2">Name</label>
                               <input
                                  className="border-2 rounded-lg p-3 flex border-gray-300"
                                  type="text"
@@ -76,7 +77,7 @@ function Contact() {
                               />
                            </div>
                            <div className="flex flex-col">
-                              <label className="uppercase text-sm py-2">
+                              <label className="uppercase text-sm pb-2">
                                  Phone Number
                               </label>
                               <input
@@ -110,7 +111,7 @@ function Contact() {
                               name="message"
                            ></textarea>
                         </div>
-                        <button className="w-full p-4 text-gray-100 mt-4">
+                        <button disabled className="w-full p-4 text-gray-100 mt-4">
                            Send Message
                         </button>
                      </form>
@@ -118,6 +119,9 @@ function Contact() {
                </div>
             </div>
          </div>
+         <p className="text-sm mt-8  opacity-50 text-center">
+				&copy; {new Date().getFullYear()} Kevin Soruco. All rights reserved.
+			</p>
       </div>
    )
 }
