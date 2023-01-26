@@ -38,10 +38,10 @@ function Navbar() {
                </div>
             </div>
 
-            <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/60" : ""}>
+            <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-[#394053]/60" : ""}>
                <div className={
                   nav
-                     ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-300"
+                     ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#4e4a59] p-10 ease-in duration-300"
                      : "fixed left-[-100%] top-0 p-10 ease-in duration-300"
                }>
                   <div className="flex w-full items-center justify-between">
