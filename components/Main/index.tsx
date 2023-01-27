@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import AnimatedText from '../AnimatedText';
 import { TagType } from '../AnimatedText/constants';
+import { PERSONAL_LINKS } from '../../constants/routes';
 
 const placeholderText = [
    {
@@ -46,15 +47,33 @@ function Main() {
                   </div>
                </motion.div>
                <div className="flex items-center justify-between max-w-[330px] m-auto mt-6">
-                  <div className="rounded-full p-3 cursor-pointer border-dashed border-2 border-[#7cae7b] hover:scale-110 ease-in duration-300">
-                     <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full border-dashed border-2 border-[#7cae7a] p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                     <FaGithub className="h-7 w-7" />
-                  </div>
-                  <div className="rounded-full border-dashed border-2 border-[#7cae7a] p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                     <AiOutlineMail />
-                  </div>
+                  <a
+                     href={PERSONAL_LINKS.linkedIn}
+                     target="_blank"
+                     rel="noreferrer"
+                  >
+                     <div className="rounded-full p-3 cursor-pointer border-dashed border-2 border-[#7cae7b] hover:scale-110 ease-in duration-300">
+                        <FaLinkedinIn />
+                     </div>
+                  </a>
+                  <a
+                     href={PERSONAL_LINKS.github}
+                     target="_blank"
+                     rel="noreferrer"
+                  >
+                     <div className="rounded-full border-dashed border-2 border-[#7cae7a] p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+                        <FaGithub className="h-7 w-7" />
+                     </div>
+                  </a>
+                  <a
+                     href="/"
+                     target="_blank"
+                     rel="noreferrer"
+                  >
+                     <div className="rounded-full border-dashed border-2 border-[#7cae7a] p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+                        <AiOutlineMail />
+                     </div>
+                  </a>
                </div>
             </div>
          </div>

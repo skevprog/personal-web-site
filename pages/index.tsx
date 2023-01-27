@@ -18,6 +18,9 @@ export default function Home() {
       <Main />
       <About />
       <Contact />
+      <p className="text-sm  p-3 opacity-50 text-center">
+        &copy; {new Date().getFullYear()} Kevin Soruco. All rights reserved.
+      </p>
     </>
   )
 }

@@ -1,64 +1,19 @@
 import React from 'react'
-import Image from 'next/image'
 
 import { AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-import GetInTouchImage from '../../public/assets/get-in-touch.jpg';
 import { PERSONAL_LINKS } from '../../constants/routes';
 
 function Contact() {
    return (
-      <div id="contact" className="w-full md:h-screen p-10 py-24">
-         <div className="max-w-[1240px] m-auto px-2 py-22 w-full ">
+      <div id="contact" className="w-full md:h-screen py-12 content-container !h-auto px-16">
+         <div className="max-w-[1240px] m-auto w-full">
             <h2 className="py-4 text-[#7cae7a]">Get In Touch</h2>
-            <div className="grid lg:grid-cols-5 gap-8">
-               {/* left */}
-               <div className="col-span-3 lg:col-span-2 w-full h-full rounded-xl p-4">
-                  <div className="lg:p-4 h-full flex flex-col justify-between">
-                     <div>
-                        <Image
-                           className="rounded-xl duration-300"
-                           src={GetInTouchImage}
-                           alt="/"
-                        />
-                     </div>
-                     <div>
-                        <p className="py-4">Feel free to Contact me by submitting the form and I will get back to you as soon as possible :)</p>
-                        <p className="py-4">I am available for freelance or full-time positions. <br /></p>
-                     </div>
-                     <div>
-                        <p className="uppercase pt-8 mb-4">Connect With Me</p>
-                        <div className="flex items-center justify-between">
-                           <a
-                              href={PERSONAL_LINKS.linkedIn}
-                              target="_blank"
-                              rel="noreferrer"
-                           >
-                              <div className="rounded-full  border-2 border-[#7cae7a] p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                                 <FaLinkedinIn />
-                              </div>
-                           </a>
-                           <a
-                              href={PERSONAL_LINKS.github}
-                              target="_blank"
-                              rel="noreferrer"
-                           >
-                              <div className="rounded-full border-2 border-[#7cae7a] p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                                 <FaGithub />
-                              </div>
-                           </a>
-
-                           <div className="rounded-full border-2 border-[#7cae7a] p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                              <AiOutlineMail />
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               {/* right */}
-               <div className="col-span-3 w-full h-auto  rounded-xl lg:p-4">
-                  <div className="p-4">
+            <div className="md:grid m-auto lg:grid-cols-2 sm:grid-cols-1 lg:gap-16">
+               {/* Form */}
+               <div className="col-span-1 w-full h-auto  rounded-xl">
+                  <div className="py-4">
                      <form
                         action="https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060"
                         method="POST"
@@ -114,13 +69,43 @@ function Contact() {
                      </form>
                   </div>
                </div>
+               {/* Text right */}
+               <div className="col-span-3 lg:col-span-1 w-full h-full rounded-xl py-4 flex flex-col items-center justify-center ">
+                  <div className="p-6">
+                     <div>
+                        <p className="py-4 text-center">Feel free to Contact me by submitting the form :). <br />Or find me in: </p>
+                     </div>
+                     <div>
+                        <div className="flex items-center justify-center">
+                           <a
+                              href={PERSONAL_LINKS.linkedIn}
+                              target="_blank"
+                              rel="noreferrer"
+                           >
+                              <div className="rounded-full p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                                 <FaLinkedinIn size="1.5rem" />
+                              </div>
+                           </a>
+                           <a
+                              href={PERSONAL_LINKS.github}
+                              target="_blank"
+                              rel="noreferrer"
+                           >
+                              <div className="rounded-full p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                                 <FaGithub size="1.5rem" />
+                              </div>
+                           </a>
+
+                           <div className="rounded-full p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                              <AiOutlineMail size="1.5rem" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
-         <p className="text-sm mt-8  opacity-50 text-center">
-				&copy; {new Date().getFullYear()} Kevin Soruco. All rights reserved.
-			</p>
-      </div>
-   )
+      </div>)
 }
 
 export default Contact;
