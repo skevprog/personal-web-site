@@ -42,4 +42,8 @@ html {
   .content-container {
     height: calc(100vh - 80px) !important;
   }
+  
+  input, textarea {
+    @apply text-black;
+  }
 }
