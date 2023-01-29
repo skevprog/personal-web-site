@@ -1,11 +1,11 @@
-import { AiOutlineMail } from 'react-icons/ai'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 type Route = {
    id: string;
    href: string;
    label: string;
-}
+};
 
 export const routeNames: Route[] = [
    {
@@ -23,7 +23,7 @@ export const routeNames: Route[] = [
       href: '#contact',
       label: 'Contact',
    },
-]
+];
 
 export const socialIconLinks = [
    {
@@ -37,5 +37,5 @@ export const socialIconLinks = [
    {
       id: 'email',
       icon: AiOutlineMail,
-   }
-]
+   },
+];

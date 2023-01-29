@@ -2,7 +2,6 @@ import React from 'react';
 import { useForm } from '@formspree/react';
 
 function ContactForm() {
-
    const [{ submitting, succeeded, errors }, handleSubmit] = useForm('contact');
 
    const displayButtonStatus = () => {
@@ -10,25 +9,20 @@ function ContactForm() {
       if (!errors?.length && succeeded) return 'Sent';
 
       return 'Send';
-   }
+   };
 
    return (
       <div className="py-4">
-         <form
-            method="POST"
-            onSubmit={handleSubmit}
-         >
+         <form method="POST" onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 gap-4 w-full pb-2">
                <div className="flex flex-col">
-                  <label className="uppercase text-sm pb-2">
-                     Name
-                  </label>
+                  <label className="uppercase text-sm pb-2">Name</label>
                   <input
                      className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                      id="name"
-                     type="text"
                      name="name"
                      required
+                     type="text"
                   />
                </div>
                <div className="flex flex-col">
@@ -37,53 +31,50 @@ function ContactForm() {
                   </label>
                   <input
                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                     type="text"
                      name="phone"
+                     type="text"
                   />
                </div>
             </div>
             <div className="flex flex-col py-2">
-               <label className="uppercase text-sm py-2">
-                  Email
-               </label>
+               <label className="uppercase text-sm py-2">Email</label>
                <input
                   className="border-2 rounded-lg p-3 flex border-gray-300"
                   id="email"
-                  type="email"
                   name="email"
                   required
+                  type="email"
                />
             </div>
             <div className="flex flex-col py-2">
-               <label className="uppercase text-sm py-2">
-                  Subject
-               </label>
+               <label className="uppercase text-sm py-2">Subject</label>
                <input
                   className="border-2 rounded-lg p-3 flex border-gray-300"
                   id="Subject"
-                  type="text"
                   name="subject"
                   required
+                  type="text"
                />
             </div>
             <div className="flex flex-col py-2">
-               <label className="uppercase text-sm py-2">
-                  Message
-               </label>
+               <label className="uppercase text-sm py-2">Message</label>
                <textarea
-                  id="Message"
                   className="border-2 rounded-lg p-3 border-gray-300"
-                  rows={6}
+                  id="Message"
                   name="message"
                   required
+                  rows={6}
                ></textarea>
             </div>
-            <button disabled={submitting} className="w-full p-4 text-gray-100 mt-4">
-            {displayButtonStatus()}
+            <button
+               className="w-full p-4 text-gray-100 mt-4"
+               disabled={submitting}
+            >
+               {displayButtonStatus()}
             </button>
          </form>
       </div>
-   )
+   );
 }
 
 export default ContactForm;
