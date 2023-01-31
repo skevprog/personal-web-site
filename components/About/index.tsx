@@ -14,8 +14,8 @@ function About() {
                <h2 className="py-2 text-[#7cae7a]">Who I Am</h2>
                <section>
                   <p className="py-2 max-w-2xl text-600 text-xl">
-                     Hi. My name is Kevin and I enjoy building things that can
-                     solve problems and can be used on a daily basis.
+                     Hi. My name is Kevin and I enjoy building things that solve
+                     problems and can be used on a daily basis.
                   </p>
                   <p className="py-2 max-w-2xl text-600 text-xl">
                      I&apos;ve spent the past 5 years working on different
