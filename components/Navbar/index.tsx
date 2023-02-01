@@ -30,7 +30,7 @@ function Navbar() {
                <ul className="hidden md:flex">
                   {routeNames.map(route => (
                      <Link href={route.href} key={route.id}>
-                        <li className="ml-16 text-md text-center rounded p-2 hover:scale-105 hover:font-bold ease-in duration-100 w-24 justify-center">
+                        <li className="ml-10 text-md text-center rounded p-2 hover:scale-105 hover:font-bold ease-in duration-100 w-24 justify-center">
                            <span>{route.label}</span>
                         </li>
                      </Link>

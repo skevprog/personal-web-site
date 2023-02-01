@@ -2,12 +2,16 @@ import { FaNodeJs, FaReact } from 'react-icons/fa';
 import { GrGraphQl } from 'react-icons/gr';
 import { DiCss3 } from 'react-icons/Di';
 import {
+   SiCss3,
+   SiExpress,
    SiFramer,
    SiHtml5,
    SiJavascript,
+   SiMongodb,
    SiTailwindcss,
    SiTypescript,
 } from 'react-icons/Si';
+import { TbBrandNextjs } from 'react-icons/Tb';
 import { IconType } from 'react-icons';
 
 type Icon = {
@@ -17,19 +21,19 @@ type Icon = {
 
 export const skillsIcons: Icon[] = [
    {
-      id: 'react',
+      id: 'React',
       name: FaReact,
    },
    {
-      id: 'graphQl',
+      id: 'GraphQl',
       name: GrGraphQl,
    },
    {
-      id: 'css',
-      name: DiCss3,
+      id: 'Css3',
+      name: SiCss3,
    },
    {
-      id: 'tailwind',
+      id: 'Tailwind',
       name: SiTailwindcss,
    },
    {
@@ -37,19 +41,31 @@ export const skillsIcons: Icon[] = [
       name: SiJavascript,
    },
    {
-      id: 'typescript',
+      id: 'Typescript',
       name: SiTypescript,
    },
    {
-      id: 'html',
+      id: 'Html5',
       name: SiHtml5,
    },
    {
-      id: 'node',
+      id: 'Node',
       name: FaNodeJs,
    },
    {
-      id: 'framer',
+      id: 'Framer',
       name: SiFramer,
+   },
+   {
+      id: 'Nextjs',
+      name: TbBrandNextjs,
+   },
+   {
+      id: 'Express',
+      name: SiExpress,
+   },
+   {
+      id: 'Mongo',
+      name: SiMongodb,
    },
 ];
