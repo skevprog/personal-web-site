@@ -5,7 +5,7 @@ import AboutImg from '../../public/assets/me.jpeg';
 
 function About() {
    return (
-      <div
+      <section
          className="w-full md:h-screen p-16 flex items-center py-16"
          id="about"
       >
@@ -37,7 +37,7 @@ function About() {
                <Image alt="about" className="rounded-xl" src={AboutImg} />
             </div>
          </div>
-      </div>
+      </section>
    );
 }
 

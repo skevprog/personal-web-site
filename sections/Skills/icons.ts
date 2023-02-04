@@ -1,6 +1,6 @@
 import { FaNodeJs, FaReact } from 'react-icons/fa';
 import { GrGraphQl } from 'react-icons/gr';
-import { DiCss3 } from 'react-icons/Di';
+
 import {
    SiCss3,
    SiExpress,

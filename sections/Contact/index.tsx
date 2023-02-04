@@ -15,11 +15,11 @@ function Contact() {
          <div className="max-w-[1240px] m-auto w-full">
             <h2 className="py-4 text-[#7cae7a]">Get In Touch</h2>
             <div className="md:grid m-auto lg:grid-cols-2 sm:grid-cols-1 lg:gap-16">
-               {/* Form */}
+               {/* Left */}
                <div className="col-span-1 w-full h-auto  rounded-xl">
                   <Form />
                </div>
-               {/* Text right */}
+               {/* Right */}
                <div className="col-span-3 lg:col-span-1 w-full h-full rounded-xl py-4 flex flex-col items-center justify-center ">
                   <div className="p-6">
                      <div>

@@ -4,7 +4,7 @@ import React from 'react';
 
 const Skills = () => {
    return (
-      <div
+      <section
          className="w-full md:h-screen content-container !h-auto p-16"
          id="skills"
       >
@@ -23,7 +23,7 @@ const Skills = () => {
                ))}
             </div>
          </div>
-      </div>
+      </section>
    );
 };
 

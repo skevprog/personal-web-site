@@ -3,9 +3,9 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 import { motion } from 'framer-motion';
-import AnimatedText from '../AnimatedText';
-import { TagType } from '../AnimatedText/constants';
 import { PERSONAL_LINKS } from '../../constants/routes';
+import { TagType } from '../../components/AnimatedText/constants';
+import AnimatedText from '../../components/AnimatedText';
 
 const placeholderText = [
    {
