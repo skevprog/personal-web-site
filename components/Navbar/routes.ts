@@ -14,11 +14,6 @@ export const routeNames: Route[] = [
       label: 'Home',
    },
    {
-      id: 'skills',
-      href: '#skills',
-      label: 'Skills',
-   },
-   {
       id: 'about',
       href: '#about',
       label: 'About',

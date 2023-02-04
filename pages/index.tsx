@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar';
 import Main from '../sections/Main';
 import About from '../sections/About';
 import Contact from '../sections/Contact';
-import Skills from '../sections/Skills';
 
 export default function Home() {
    return (
@@ -20,7 +19,6 @@ export default function Home() {
          </Head>
          <Navbar />
          <Main />
-         <Skills />
          <About />
          <Contact />
          <p className="text-sm  p-3 opacity-50 text-center">
