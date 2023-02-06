@@ -33,3 +33,27 @@ li {
   height: 20px;
   flex: 1;
 }
+
+.underline {
+  height: 4px;
+  border-radius: 15px; 
+  background: white;
+  opacity: 0.85;
+}
+
+
+.mobile-navbar {
+  background-color: #4e4a59;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.container a {
+  color: #f9fafb;
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 20px;
+}
