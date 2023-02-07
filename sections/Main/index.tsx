@@ -47,30 +47,52 @@ function Main() {
                      })}
                   </div>
                </motion.div>
-               <div className="flex items-center justify-between max-w-[330px] m-auto mt-6">
-                  <a
+               <div className="flex items-center justify-between max-w-[230px] md:max-w-[330px] m-auto mt-6">
+                  <motion.a
+                     className="rounded-full border-dashed border-2 border-[#7cae7a] p-2 md:p-3 cursor-pointer"
                      href={PERSONAL_LINKS.linkedIn}
                      rel="noreferrer"
                      target="_blank"
+                     transition={{
+                        type: 'spring',
+                        stiffness: 400,
+                        damping: 10,
+                     }}
+                     whileHover={{ scale: 1.2 }}
+                     whileTap={{ scale: 0.5 }}
                   >
-                     <div className="rounded-full p-3 cursor-pointer border-dashed border-2 border-[#7cae7b] hover:scale-110 ease-in duration-300">
-                        <FaLinkedinIn />
-                     </div>
-                  </a>
-                  <a
+                     <FaLinkedinIn className="h-4 w-4 md:h-5 md:w-5" />
+                  </motion.a>
+                  <motion.a
+                     className="rounded-full border-dashed border-2 border-[#7cae7a] p-2 md:p-3 cursor-pointer"
                      href={PERSONAL_LINKS.github}
                      rel="noreferrer"
                      target="_blank"
+                     transition={{
+                        type: 'spring',
+                        stiffness: 400,
+                        damping: 10,
+                     }}
+                     whileHover={{ scale: 1.2 }}
+                     whileTap={{ scale: 0.5 }}
                   >
-                     <div className="rounded-full border-dashed border-2 border-[#7cae7a] p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaGithub className="h-7 w-7" />
-                     </div>
-                  </a>
-                  <a href="/" rel="noreferrer" target="_blank">
-                     <div className="rounded-full border-dashed border-2 border-[#7cae7a] p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <AiOutlineMail />
-                     </div>
-                  </a>
+                     <FaGithub className="h-7 w-7 md:h-8 md:w-8" />
+                  </motion.a>
+                  <motion.a
+                     className="rounded-full border-dashed border-2 border-[#7cae7a] p-2 md:p-3 cursor-pointer"
+                     href="mailto:someone@yoursite.com"
+                     rel="noreferrer"
+                     target="_blank"
+                     transition={{
+                        type: 'spring',
+                        stiffness: 400,
+                        damping: 10,
+                     }}
+                     whileHover={{ scale: 1.2 }}
+                     whileTap={{ scale: 0.5 }}
+                  >
+                     <AiOutlineMail className="h-4 w-4 md:h-5 md:w-5" />
+                  </motion.a>
                </div>
             </div>
          </div>

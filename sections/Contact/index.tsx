@@ -9,7 +9,7 @@ import Form from './components/ContactForm';
 function Contact() {
    return (
       <div
-         className="w-full md:h-screen py-12 content-container !h-auto px-16"
+         className="w-full md:h-screen pt-20 pb-12 content-container !h-auto px-16 text-center md:text-left"
          id="contact"
       >
          <div className="max-w-[1240px] m-auto w-full">

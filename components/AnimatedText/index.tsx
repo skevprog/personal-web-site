@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { motion } from 'framer-motion';
 import { tagMap, TagType } from './constants';
 
@@ -22,10 +22,6 @@ const item = {
    },
 };
 
-const Wrapper = ({ children }: { children: JSX.Element[] }): JSX.Element => {
-   return <span className="whitespace-nowrap">{children}</span>;
-};
-
 interface AnimatedCharactersProps {
    type: TagType;
    text: string;
@@ -37,9 +33,10 @@ const AnimatedCharacters = ({
    type,
    className,
 }: AnimatedCharactersProps): JSX.Element => {
-   const words: string[][] = text
-      .split(' ')
-      .map(word => `${word}\u00A0`.split(''));
+   const splittedWord = text.split(' ');
+   const words: string[][] = splittedWord.map((word, index) =>
+      `${word}${index === splittedWord.length - 1 ? '' : '\u00A0'}`.split(''),
+   );
 
    const Tag = tagMap[type];
 
@@ -47,20 +44,17 @@ const AnimatedCharacters = ({
       <Tag className={className}>
          {words.map((word, wordIndex) => {
             return (
-               <Wrapper key={wordIndex}>
+               <Fragment key={wordIndex}>
                   {words[wordIndex]
                      .flat()
                      .map((element: string, index: number) => {
                         return (
                            <span
+                              className="overflow-hidden inline-block cursor-default"
                               key={index}
-                              style={{
-                                 overflow: 'hidden',
-                                 display: 'inline-block',
-                              }}
                            >
                               <motion.span
-                                 style={{ display: 'inline-block' }}
+                                 className="inline-block"
                                  variants={
                                     words[wordIndex].includes('K')
                                        ? {
@@ -81,7 +75,7 @@ const AnimatedCharacters = ({
                            </span>
                         );
                      })}
-               </Wrapper>
+               </Fragment>
             );
          })}
       </Tag>

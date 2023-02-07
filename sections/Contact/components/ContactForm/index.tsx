@@ -12,13 +12,13 @@ function ContactForm() {
    };
 
    return (
-      <div className="py-4">
+      <div className="py-4 text-left">
          <form method="POST" onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 gap-4 w-full pb-2">
                <div className="flex flex-col">
                   <label className="uppercase text-sm pb-2">Name</label>
                   <input
-                     className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
+                     className="border-2 rounded-lg p-2 md:p-3 flex border-gray-300 text-black"
                      id="name"
                      name="name"
                      required
@@ -30,7 +30,7 @@ function ContactForm() {
                      Phone Number (Optional)
                   </label>
                   <input
-                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                     className="border-2 rounded-lg p-2 md:p-3 flex border-gray-300"
                      name="phone"
                      type="text"
                   />
@@ -39,7 +39,7 @@ function ContactForm() {
             <div className="flex flex-col py-2">
                <label className="uppercase text-sm py-2">Email</label>
                <input
-                  className="border-2 rounded-lg p-3 flex border-gray-300"
+                  className="border-2 rounded-lg p-2 md:p-3 flex border-gray-300"
                   id="email"
                   name="email"
                   required
@@ -49,7 +49,7 @@ function ContactForm() {
             <div className="flex flex-col py-2">
                <label className="uppercase text-sm py-2">Subject</label>
                <input
-                  className="border-2 rounded-lg p-3 flex border-gray-300"
+                  className="border-2 rounded-lg p-2 md:p-3 flex border-gray-300"
                   id="Subject"
                   name="subject"
                   required
@@ -59,7 +59,7 @@ function ContactForm() {
             <div className="flex flex-col py-2">
                <label className="uppercase text-sm py-2">Message</label>
                <textarea
-                  className="border-2 rounded-lg p-3 border-gray-300"
+                  className="border-2 rounded-lg p-2 md:p-3 border-gray-300"
                   id="Message"
                   name="message"
                   required

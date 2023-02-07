@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const clamp = (value: number) => Math.max(0, value);
 
@@ -8,7 +8,7 @@ const isBetween = (value: number, floor: number, ceil: number) =>
 function useScrollspy(ids: string[], offset = 0) {
    const [activeId, setActiveId] = useState('');
 
-   useLayoutEffect(() => {
+   useEffect(() => {
       const listener = () => {
          const scroll = window.pageYOffset;
 
