@@ -30,10 +30,10 @@ const container = {
 
 function Main() {
    return (
-      <main className="w-full h-screen text-center">
+      <main className="w-full h-screen text-center hero">
          <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
             <div>
-               <p className="uppercase text-sm tracking-widest text-600">
+               <p className="uppercase text-sm tracking-widest text-600 ">
                   LET&apos;S BUILD SOMETHING TOGETHER
                </p>
                <motion.div

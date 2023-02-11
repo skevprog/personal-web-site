@@ -47,3 +47,36 @@ html {
     @apply text-black;
   }
 }
+
+.hero {
+  /* Sizing */
+  height: 100vh;
+  
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Text styles */
+  text-align: center;
+  
+  /* Background styles */
+  background: rgba(0, 0, 0, 0.3);
+ 
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/hero.webp);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 2;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
