@@ -49,6 +49,7 @@ function Main() {
                </motion.div>
                <div className="flex items-center justify-between max-w-[230px] md:max-w-[330px] m-auto mt-6">
                   <motion.a
+                     aria-label="LinkedIn"
                      className="rounded-full border-dashed border-2 border-[#7cae7a] p-2 md:p-3 cursor-pointer"
                      href={PERSONAL_LINKS.linkedIn}
                      rel="noreferrer"
@@ -64,6 +65,7 @@ function Main() {
                      <FaLinkedinIn className="h-4 w-4 md:h-5 md:w-5" />
                   </motion.a>
                   <motion.a
+                     aria-label="Github"
                      className="rounded-full border-dashed border-2 border-[#7cae7a] p-2 md:p-3 cursor-pointer"
                      href={PERSONAL_LINKS.github}
                      rel="noreferrer"
@@ -79,6 +81,7 @@ function Main() {
                      <FaGithub className="h-7 w-7 md:h-8 md:w-8" />
                   </motion.a>
                   <motion.a
+                     aria-label="mailto"
                      className="rounded-full border-dashed border-2 border-[#7cae7a] p-2 md:p-3 cursor-pointer"
                      href="mailto:someone@yoursite.com"
                      rel="noreferrer"

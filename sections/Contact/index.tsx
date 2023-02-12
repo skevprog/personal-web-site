@@ -32,6 +32,7 @@ function Contact() {
                      <div>
                         <div className="flex items-center justify-center">
                            <a
+                              aria-label="LinkedIn"
                               href={PERSONAL_LINKS.linkedIn}
                               rel="noreferrer"
                               target="_blank"
@@ -41,6 +42,7 @@ function Contact() {
                               </div>
                            </a>
                            <a
+                              aria-label="Github"
                               href={PERSONAL_LINKS.github}
                               rel="noreferrer"
                               target="_blank"

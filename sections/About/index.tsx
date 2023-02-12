@@ -1,7 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import Image from 'next/image';
-
-import AboutImg from '../../public/assets/me.webp';
 
 function About() {
    return (
@@ -18,23 +16,33 @@ function About() {
                      problems and can be used on a daily basis.
                   </p>
                   <p className="py-2 max-w-2xl text-600 text-md lg:text-xl">
-                     I&apos;ve spent the past 5 years working on different
-                     companies and for product owners to transform their ideas
+                     I&apos;ve spent the past 5 years working for different
+                     companies and with product owners to transform their ideas
                      into web/mobile apps.
                   </p>
                   <p className="py-2 max-w-2xl text-600 text-md lg:text-xl">
                      These days, my time is spent researching, coding, traveling
-                     and learning new technologies to apply in different
-                     projects.
+                     and learning new technologies to apply in new projects.
                   </p>
                   <p className="py-2 max-w-2xl text-600 text-md lg:text-xl">
-                     On my spare time I go hiking and practice rock climbing, I
+                     In my spare time, I go hiking and practice rock climbing. I
                      really enjoy nature and outdoor sports.
                   </p>
                </section>
             </div>
-            <div className="w-full m-auto h-auto rounded-xl p-6 hover:scale-105 ease-in duration-300">
-               <Image alt="about" className="rounded-xl" src={AboutImg} />
+            <div className="w-full m-auto h-auto rounded-xl p-0 mt-6 md:mt-0 md:p-6">
+               <img
+                  alt="Me"
+                  className="rounded-xl"
+                  src="/assets/me.webp"
+                  srcSet="
+                  /assets/about/me-600.webp 600w,
+                  /assets/about/me-800.webp 800w,
+                  /assets/about/me-1000.webp 1000w,
+                  /assets/about/me-1200.webp 1200w,
+                  "
+                  width={1200}
+               />
             </div>
          </div>
       </section>
