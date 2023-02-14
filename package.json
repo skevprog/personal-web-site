@@ -1,11 +1,13 @@
 {
   "name": "personal-web-site",
+  "homepage": "https://kevsoruco.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
+    "export": "next build && next export",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prepare": "husky install"
