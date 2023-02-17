@@ -101,7 +101,7 @@ function ContactForm() {
             ) : null}
             {succeeded ? (
                <p className="text-center py-5 border-2 border-[#7cae7a] text-lg">
-                  {"Thanks! I'll contact you Asap."}
+                  {"Thanks! I'll contact you asap"}
                </p>
             ) : (
                <button

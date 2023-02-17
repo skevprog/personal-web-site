@@ -83,7 +83,7 @@ function Main() {
                   <motion.a
                      aria-label="mailto"
                      className="rounded-full border-dashed border-2 border-[#7cae7a] p-2 md:p-3 cursor-pointer"
-                     href="mailto:someone@yoursite.com"
+                     href="mailto:hello@kevsoruco.com"
                      rel="noreferrer"
                      target="_blank"
                      transition={{

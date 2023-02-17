@@ -23,11 +23,10 @@ function Contact() {
                <div className="col-span-3 lg:col-span-1 w-full h-full rounded-xl py-4 flex flex-col items-center justify-center ">
                   <div className="p-6">
                      <div>
-                        <p className="py-4 text-center">
-                           Feel free to Contact me by submitting the form :).{' '}
-                           <br />
-                           Or find me in:{' '}
+                        <p className="py-3 text-center">
+                           Feel free to Contact me by submitting the form
                         </p>
+                        <p className="py-3 text-center">Or find me in: </p>
                      </div>
                      <div>
                         <div className="flex items-center justify-center">
@@ -52,9 +51,16 @@ function Contact() {
                               </div>
                            </a>
 
-                           <div className="rounded-full p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                              <AiOutlineMail size="1.5rem" />
-                           </div>
+                           <a
+                              aria-label="mailto"
+                              href="mailto:hello@kevsoruco.com"
+                              rel="noreferrer"
+                              target="_blank"
+                           >
+                              <div className="rounded-full p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                                 <AiOutlineMail size="1.5rem" />
+                              </div>
+                           </a>
                         </div>
                      </div>
                   </div>
