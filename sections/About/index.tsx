@@ -4,7 +4,7 @@ import React from 'react';
 function About() {
    return (
       <section
-         className="w-full md:h-screen p-16 flex items-center py-20 text-center md:text-left"
+         className="w-full md:h-screen content-container flex items-center text-center md:text-left px-10 md:px-20"
          id="about"
       >
          <div className="max-w-[1240px] m-auto md:grid grid-cols-2 gap-2">

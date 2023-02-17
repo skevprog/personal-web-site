@@ -40,7 +40,8 @@ html {
   }
 
   .content-container {
-    height: calc(100vh - 80px) !important;
+    min-height: calc(100vh - 80px) !important;
+    padding-top: 80px;
   }
   
   input, textarea {

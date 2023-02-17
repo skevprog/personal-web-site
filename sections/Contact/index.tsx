@@ -8,15 +8,15 @@ import Form from './components/ContactForm';
 
 function Contact() {
    return (
-      <div
-         className="w-full md:h-screen pt-20 pb-12 content-container !h-auto px-16 text-center md:text-left"
+      <section
+         className="w-full md:h-screen content-container flex items-center text-center md:text-left px-10 md:px-20"
          id="contact"
       >
          <div className="max-w-[1240px] m-auto w-full">
             <h2 className="py-4 text-[#7cae7a]">Get In Touch</h2>
             <div className="md:grid m-auto lg:grid-cols-2 sm:grid-cols-1 lg:gap-16">
                {/* Left */}
-               <div className="col-span-1 w-full h-auto  rounded-xl">
+               <div className="col-span-1 w-full  rounded-xl">
                   <Form />
                </div>
                {/* Right */}
@@ -67,7 +67,7 @@ function Contact() {
                </div>
             </div>
          </div>
-      </div>
+      </section>
    );
 }
 
